@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment04.HelloController">
+   <children>
+      <Label layoutX="101.0" layoutY="39.0" prefHeight="35.0" prefWidth="148.0" text="Bill Calculator">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="98.0" prefHeight="20.0" prefWidth="46.0" text="Food">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="148.0" prefHeight="20.0" prefWidth="46.0" text="Drink">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="199.0" prefHeight="17.0" prefWidth="46.0" text="Dessert">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="food" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="96.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="drink" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="dessert" alignment="CENTER_RIGHT" layoutX="119.0" layoutY="195.0" prefHeight="25.0" prefWidth="217.0" />
+      <Label layoutX="32.0" layoutY="240.0" prefHeight="20.0" prefWidth="46.0" text="Tip">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="t1" layoutX="119.0" layoutY="242.0" mnemonicParsing="false" selected="true" text="15%">
+         <toggleGroup>
+            <ToggleGroup fx:id="Tip" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="t2" layoutX="184.0" layoutY="242.0" mnemonicParsing="false" text="20%" toggleGroup="$Tip" />
+      <RadioButton fx:id="t3" layoutX="249.0" layoutY="242.0" mnemonicParsing="false" text="25%" toggleGroup="$Tip" />
+      <Button layoutX="58.0" layoutY="441.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="84.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset" layoutX="199.0" layoutY="441.0" mnemonicParsing="false" onAction="#reset" prefHeight="35.0" prefWidth="84.0" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="summary" layoutX="74.0" layoutY="272.0" prefHeight="165.0" prefWidth="211.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
